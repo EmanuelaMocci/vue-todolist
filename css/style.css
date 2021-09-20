@@ -49,6 +49,8 @@ ul li{
     border-bottom: 1px solid lightgrey;
     background-color: rgb(243, 243, 243);
     font-weight: bold;
+    display: flex;
+    justify-content: space-between
 }
 ul li:hover{
     background-color: white;
