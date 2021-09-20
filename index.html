@@ -26,6 +26,11 @@
             </div>
         </header>
 
+        <main>
+            <ul>
+                <li v-for='(todo, index) in todos' :key="index">{{todo}}</li>
+            </ul>
+        </main>
        
 
         </div>
