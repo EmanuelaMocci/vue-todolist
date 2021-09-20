@@ -32,8 +32,13 @@
         </header>
 
         <main>
-            <ul>
+            <ul v-if="todos.length > 0">
                 <li v-for='(todo, index) in todos' :key="index">{{todo}} <i class="fas fa-times" @click="removeTodo(index)"></i></li>
+            </ul>
+            <ul v-else>
+                <li>
+                    <h3>Non ci sono impegni.</h3>
+                </li>
             </ul>
         </main>
        
