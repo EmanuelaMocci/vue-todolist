@@ -11,8 +11,12 @@ var app = new Vue({
     },
     methods: {
         addNuovo: function(){
-            this.todos.push(this.nuovo);
+            if(this.nuovo != ""){
+                this.todos.push(this.nuovo);
+            } this.nuovo = "";
+        },
+        removeTodo: function(index){
+            this.todos.splice(index, 1)
         }
-
     }
 })
