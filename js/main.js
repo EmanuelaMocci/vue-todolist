@@ -5,9 +5,14 @@
 var app = new Vue({
     el: '#root',
     data: {
-        logo: 'img/logo.png'
+        logo: 'img/logo.png',
+        todos: ['Portare a passeggio i cani', 'Andare al mare'],
+        nuovo: ""
     },
     methods: {
+        addNuovo: function(){
+            this.todos.push(this.nuovo);
+        }
 
     }
 })

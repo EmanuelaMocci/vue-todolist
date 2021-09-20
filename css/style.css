@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Lato', sans-serif;
+}
+/* Header */
 .header-top{
     display: flex;
     justify-content: center;
@@ -12,7 +15,7 @@
     width: 300px;
     margin: 30px;
 }
-.header-bottom{
+header{
     text-align: center;
 }
 .header-bottom input, .header-bottom button{
@@ -27,3 +30,27 @@
     text-decoration: none;
     color: black;
 }
+/* /Header */
+
+/* Main */
+main{
+    width: 70%;
+    margin: auto;
+}
+ul{
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    border-radius: 7px;
+    margin-top: 40px;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+    background-color: rgb(243, 243, 243);
+    font-weight: bold;
+}
+ul li:hover{
+    background-color: white;
+}
+/* /Main */
